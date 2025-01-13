@@ -1,0 +1,262 @@
+body {
+ 
+    margin: 0;
+    
+    font-family: "DM Sans", sans-serif;
+  }
+
+  /* Inicio */
+
+  /* SEÇÃO 01 */
+
+ .home {
+    background-image: url(imagens/backgraudone.png);
+
+    padding-bottom: 12.5rem; /* era 200 px alterei para 12.5 rem, verificar a questão da flexibilidade */
+    padding-top: 6.25rem; /* era 100 px alterei para 6.25 rem, verificar a questão da flexibilidade */
+    padding-right: 5rem;
+    padding-left: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2 {
+    color: aliceblue;
+  }
+
+  .destaque {
+    color: #45a049;
+  }
+
+  /* DIV START */
+
+  .start {
+    width: 30rem; /* era 1000 px alterei para 62.5 rem, verificar a questão da flexibilidade */
+      padding-top: 1rem; /* era 65 px alterei para 4.1 rem, verificar a questão da flexibilidade */
+      padding-left: 1rem; /* era 150 px alterei para 9 rem, verificar a questão da flexibilidade */
+      padding-bottom: 1rem;
+  }
+
+  /* FORMULARIO */
+
+  form {
+    display: flex;
+    flex-direction: column;  /* Organiza os elementos em coluna */
+    gap: 5px;               /* Espaçamento entre os campos */
+  }
+  
+  label {
+    font-size: 16px;  /* Tamanho da fonte do label (opcional) */
+  }
+  
+  input {
+    padding: 8px;              /* Espaçamento interno dos campos */
+    border: 2px solid #4CAF50;  /* Cor da borda */
+    border-radius: 5px;         /* Bordas arredondadas */
+  }
+  
+  button {
+    padding: 10px 20px;         /* Espaçamento do botão */
+    border: none;               /* Remove borda */
+    background-color: #4CAF50;  /* Cor do fundo */
+    color: white;               /* Cor do texto */
+    cursor: pointer;            /* Aponta o cursor para indicar ação */
+    border-radius: 5px;         /* Bordas arredondadas no botão */
+  }
+  
+  button:hover {
+    background-color: #45a049;  /* Cor do fundo ao passar o mouse */
+  }
+
+  /* FIM DA SEÇÃO 01 */
+
+  /* Seção Gratuto */
+
+  .gratuito {
+
+    background-color: black;
+    padding-bottom: 2rem; /* era 200 px alterei para 12.5 rem, verificar a questão da flexibilidade */
+    padding-top: 2rem; /* era 100 px alterei para 6.25 rem, verificar a questão da flexibilidade */
+    padding-right: 5rem;
+    padding-left: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+ h1{
+    color: aliceblue;
+  }
+
+  /* Seção Medium */
+
+  .medium {
+    background-image: url(imagens/backgraudotwodefinitivo.png);
+    
+    
+    padding-right: 5rem;
+    padding-left: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .center {
+    width: 30rem; /* era 1000 px alterei para 62.5 rem, verificar a questão da flexibilidade */
+      padding-top: 1rem; /* era 65 px alterei para 4.1 rem, verificar a questão da flexibilidade */
+      padding-left: 1rem; /* era 150 px alterei para 9 rem, verificar a questão da flexibilidade */
+      padding-bottom: 1rem;
+  }
+
+  img {
+    width: 400px; /* Define a largura da imagem */
+    height: 300px; /* Define a altura da imagem */
+  }
+
+  h3 {
+    color: aliceblue;
+  }
+
+  /* Seção e Botão Final */
+
+.end {
+  background-color: black;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+#fim {
+  width: 300px; /* Largura do botão */
+  height: 50px; /* Altura do botão */
+
+  font-size: 18px;
+}
+
+.redes {
+  background-color: #000000;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.redessociais {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+}
+
+
+/* Estilos para telas menores (dispositivos móveis) */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Diminui o tamanho da fonte para telas pequenas */
+  }
+
+  .home {
+    padding: 2rem 1rem; /* Ajusta os paddings para menor largura */
+    background-size: cover; /* Garante que a imagem de fundo se adapte */
+    flex-direction: column; /* Reorganiza os itens verticalmente */
+
+  }
+
+  h2 {
+    text-align: center;
+  }
+  
+
+  .start {
+    width: 100%; /* Ajusta a largura para ocupar toda a tela */
+    padding: 1rem; /* Espaçamento interno menor */
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  form {
+    gap: 10px; /* Aumenta o espaçamento entre os campos */
+
+    align-items: center
+  }
+
+  input {
+    width: 150%; /* Faz com que os inputs ocupem toda a largura */
+    font-size: 14px; /* Diminui o tamanho da fonte */
+  } 
+  
+
+  button {
+    width: 150%; /* Botão ocupa toda a largura */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+  }
+
+  .gratuito {
+    padding: 1rem; /* Reduz os paddings */
+    flex-direction: column; /* Reorganiza os itens verticalmente */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .medium {
+    padding: 2rem 1rem; /* Reduz o padding lateral */
+    background-size: cover; /* Adapta a imagem de fundo */
+    flex-direction: column; /* Alinha itens verticalmente */
+  }
+
+  .center {
+    width: 100%; /* Adapta para ocupar a largura do dispositivo */
+    padding: 1rem;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  img {
+    width: 50%; /* Imagem ocupa toda a largura */
+    height: auto; /* Mantém a proporção */
+  }
+
+  .end {
+    flex-direction: column; /* Reorganiza itens verticalmente */
+    padding: 1rem;
+  }
+
+  #fim {
+    width: 100%; /* Botão ocupa toda a largura */
+    font-size: 16px; /* Ajusta o tamanho da fonte */
+  }
+
+  .redes {
+    flex-direction: column; /* Reorganiza itens verticalmente */
+    padding: 1rem;
+  }
+
+  .redessociais {
+    padding: 0; /* Remove o padding lateral */
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .logo {
+    width: 80px; /* Diminui o tamanho da logo */
+  }
+}
+
