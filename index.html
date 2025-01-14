@@ -7,6 +7,7 @@
     <title>Grupo de WhatsApp</title>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/LOGO NUCLEO BITCOIN correto.png" type="icone">
 </head>
 <body>
     <section class="home">
@@ -19,22 +20,46 @@
         </div>
 
         <div class="start">
-
-            <form action="/submit" method="POST">
+            <form 
+                action="https://nunisoftware.us11.list-manage.com/subscribe/post?u=4bd34994d461a38110ff317ef&amp;id=794aa8c666&amp;f_id=00929be1f0" 
+                method="post" 
+                id="mc-embedded-subscribe-form" 
+                name="mc-embedded-subscribe-form" 
+                class="validate" 
+                target="_self" 
+                novalidate="">
+                
                 <label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="Nome*" required>
+                <input type="text" id="name" name="FNAME" placeholder="Nome*" required>
                 
                 <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="Email*" required>
+                <input type="email" id="email" name="EMAIL" placeholder="Email*" required>
                 
                 <label for="phone"></label>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" placeholder="Celular*" required>
+                <input type="tel" id="phone" name="PHONE" pattern="[0-9]{11}" placeholder="Celular*" required>
+                
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                    <input type="text" name="b_4bd34994d461a38110ff317ef_794aa8c666" tabindex="-1" value="">
+                </div>
                 
                 <button type="submit">Quero entrar no grupo</button>
-              </form>
-              
-
+            </form>
         </div>
+        
+        <script>
+            // Captura o formulário pelo ID
+            const form = document.getElementById('mc-embedded-subscribe-form');
+        
+            // Adiciona um evento de escuta no envio do formulário
+            form.addEventListener('submit', function(event) {
+                // Aguarda um curto intervalo para garantir que o Mailchimp processe a submissão
+                setTimeout(() => {
+                    // Redireciona para a página personalizada
+                    window.location.href = "https://chat.whatsapp.com/DmOloLEf3ki9bSrsr62yJX";
+                }, 1000); // Espera 1 segundo antes de redirecionar
+            });
+        </script>
+        
     </section>
 
     <section class="gratuito">
