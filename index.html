@@ -19,7 +19,7 @@
 
         </div>
 
-        <div class="start">
+        <div class="start" id="formulario">
             <form 
                 action="https://nunisoftware.us11.list-manage.com/subscribe/post?u=4bd34994d461a38110ff317ef&amp;id=794aa8c666&amp;f_id=00929be1f0" 
                 method="post" 
@@ -45,20 +45,45 @@
                 <button type="submit">Quero entrar no grupo</button>
             </form>
         </div>
-        
+
         <script>
             // Captura o formulário pelo ID
             const form = document.getElementById('mc-embedded-subscribe-form');
         
             // Adiciona um evento de escuta no envio do formulário
             form.addEventListener('submit', function(event) {
-                // Aguarda um curto intervalo para garantir que o Mailchimp processe a submissão
+                // Impede o envio padrão do formulário
+                event.preventDefault();
+                
+                // Obter os campos do formulário
+                const name = document.getElementById('name').value.trim();
+                const email = document.getElementById('email').value.trim();
+                const phone = document.getElementById('phone').value.trim();
+                
+                // Verificar se todos os campos obrigatórios estão preenchidos
+                if (!name || !email || !phone) {
+                    alert('Por favor, preencha todos os campos obrigatórios!');
+                    return;
+                }
+        
+                // Verificar se o número de telefone é válido (11 dígitos)
+                const phonePattern = /^[0-9]{11}$/;
+                if (!phonePattern.test(phone)) {
+                    alert('Por favor, insira um número de celular válido com 11 dígitos, sem utilizar caracteres como ( ), -, ou espaços.');
+                    return;
+                }
+        
+                // Se a validação passar, aguarda um curto intervalo e redireciona
                 setTimeout(() => {
                     // Redireciona para a página personalizada
                     window.location.href = "https://chat.whatsapp.com/DmOloLEf3ki9bSrsr62yJX";
                 }, 1000); // Espera 1 segundo antes de redirecionar
+        
+                // Enviar o formulário para o Mailchimp
+                form.submit(); // Isso envia o formulário para o Mailchimp após a validação
             });
         </script>
+        
         
     </section>
 
@@ -94,6 +119,22 @@
             Quero participar agora!
         </button>
     </section>
+
+    <!-- JavaScript para rolagem suave -->
+<script>
+    // Seleciona o botão inferior
+    const button = document.getElementById('fim');
+    
+    // Adiciona um evento de clique ao botão
+    button.addEventListener('click', () => {
+        // Seleciona o formulário usando o ID
+        const formulario = document.getElementById('formulario');
+        
+        // Rola suavemente até o formulário
+        formulario.scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+
 </body>
 
 <footer>
